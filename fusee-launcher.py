@@ -5,11 +5,10 @@
 # Launcher for the {re}switched coldboot/bootrom hacks--
 # launches payloads above the Horizon
 #
+# simple edits from SuperOkazaki
+# Please support LGBT rights ^-^
 # discovery and implementation by @ktemkin
 # likely independently discovered by lots of others <3
-#
-# this code is political -- it stands with those who fight for LGBT rights
-# don't like it? suck it up, or find your own damned exploit ^-^
 #
 # special thanks to:
 #    SciresM, motezazer -- guidance and support
@@ -411,7 +410,7 @@ arguments = parser.parse_args()
 # Expand out the payload path to handle any user-refrences.
 payload_path = os.path.expanduser(arguments.payload)
 if not os.path.isfile(payload_path):
-    print("Invalid payload path specified!")
+    print("That payload doesn't exist!")
     sys.exit(-1)
 
 # Find our intermezzo relocator...
@@ -434,7 +433,7 @@ print("Found a Tegra with Device ID: {}".format(device_id))
 # Prefix the image with an RCM command, so it winds up loaded into memory
 # at the right location (0x40010000).
 
-# Use the maximum length accepted by RCM, so we can transmit as much payload as
+# Use the maximum length accepted by RCM, so we can transmit as much payload as 
 # we want; we'll take over before we get to the end.
 length  = 0x30298
 payload = length.to_bytes(4, byteorder='little')
@@ -490,6 +489,6 @@ try:
 except ValueError as e:
     print(str(e))
 except IOError:
-    print("The USB device stopped responding-- sure smells like we've smashed its stack. :)")
-    print("Launch complete!")
+    print("OwO your Switch is hacked OwO")
+    print("Yokudekimashita~")
 

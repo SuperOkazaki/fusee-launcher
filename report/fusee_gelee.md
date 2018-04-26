@@ -139,7 +139,7 @@ while (1) {
 
     // Handle the received and validated command.
     // For a "load miniloader" command, this sanity checks the (validated)
-    // miniloader image and takes steps to prevent re-use of signed data not
+    // miniloader image and takes steps to prevent re-use of signed data not 
     // intended to be used as an RCM command.
     rcm_handle_command_complete(...);
   }
@@ -199,7 +199,7 @@ while (total_rxd < total_to_rx) {
     }
   }
 
-  /* copy any data _past_ the command into a separate payload
+  /* copy any data _past_ the command into a separate payload 
      buffer at 0x40010000 */
   /* -code omitted for brevity - */
 
@@ -244,7 +244,7 @@ data that should be included in the response. Per the specification, the device
 should respond with either the *amount of data specified* or the *amount of data
 available*, whichever is less.
 
-The bootloader's implementation of this behavior is conceptually implemented as
+The bootloader's implementation of this behavior is conceptually implemented as 
 follows:
 
 ```C
@@ -298,7 +298,7 @@ respond_to_control_request(dma_buffer, length_to_send);
 
 In most cases, the handler correctly limits the length of the transmitted
 responses to the amount it has available, per the USB specification. However,
-in a few notable cases, the length is *incorrectly always set to the amount
+in a few notable cases, the length is *incorrectly always set to the amount 
 requested* by the host:
   * When issuing a `GET_CONFIGURATION` request with a `DEVICE` recipient.
   * When issuing a `GET_INTERFACE` request with a `INTERFACE` recipient.
@@ -408,7 +408,7 @@ careful sequence of interactions:
   6. If the next write would target the lower DMA buffer, issue another write
      of a full 0x1000 bytes to move the target to the upper DMA buffer, reducing
      the total amount of data to be copied.
-  7. Trigger the vulnerable memcpy by sending a `GET_STATUS` `IN` control
+  7. Trigger the vulnerable memcpy by sending a `GET_STATUS` `IN` control 
      request with an `ENDPOINT` recipient, and a length long enough to smash the
      desired stack region, and preferably not longer than required.
 
@@ -445,7 +445,7 @@ Windows support would require addition of a custom kernel module, and thus was
 beyond the scope of a simple proof-of-concept.
 
 To use this proof-of-concept on a Nintendo Switch:
-  1. Set up an Linux or macOS environment that meets the criteria above, and
+  1. Set up an Linux or macOS environment that meets the criteira above, and
      which has a working `python3` and `pyusb` installed.
   2. Connect the Switch to your host PC with a USB A -> USB C cable.
   3. Boot the Switch in RCM mode. There are three ways to do this, but the first--
