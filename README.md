@@ -13,17 +13,16 @@ It contains *no payloads*. You must download and place the payloads in the "Payl
 
 # Usage
 
-1. `cd` to the directory that you want to keep the launcher
-2. Copy the URL of the repository and run `git clone [url]`
-3. Enter RCM mode on the Switch (this will not be covered here)
-4. While in RCM mode, connect the Switch to a USB port on the computer (using a hub will likely *not* work!)
-5. Run one of the `.command` files by double-clicking on them.
-6. If using `macOS launch.command`, the script will list the available payloads (make sure they're in the `Payloads` folder).
-7. Type the name of the payload, including the .bin
-
-## Notes
-- I'm doing my best to learn scripting and programming. I know this isn't the most professional thing in the world and can be improved. I just made something for myself to use and figured it would work well for others, too. My work pales in comparison to that which I'm building off of.
-- The FuseDump .command is for use with FuseDump by Móricz Gergő.
+1. Look at the top of this repository page
+2. Click the green button that says "Clone or download"
+3. Download ZIP
+4. Find where the ZIP downloaded and extract it
+5. In the folder that was extracted place your Fusée payloads in the `Payload` folder.
+4. Enter RCM mode on the Switch (this will not be covered here)
+5. While in RCM mode, connect the Switch to a USB port on the computer (using a hub will likely *not* work!)
+6. Run one of the `.command` files by double-clicking on them.
+7. If using `macOS launch.command`, the script will list the available payloads (make sure they're in the `Payloads` folder).
+8. Type the name of the payload, including the .bin
 
 # Credit
 
