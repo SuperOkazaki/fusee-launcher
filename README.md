@@ -22,7 +22,8 @@ It contains *no payloads*. You must download and place the payloads in the "Payl
 7. Type the name of the payload, including the .bin
 
 ## Notes
-I'm doing my best to learn scripting and programming. I know this isn't the most professional thing in the world and can be improved. I just made something for myself to use and figured it would work well for others, too. My work pales in comparison to that which I'm building off of.
+- I'm doing my best to learn scripting and programming. I know this isn't the most professional thing in the world and can be improved. I just made something for myself to use and figured it would work well for others, too. My work pales in comparison to that which I'm building off of.
+- The FuseDump .command is for use with FuseDump by Móricz Gergő.
 
 # Credit
 
