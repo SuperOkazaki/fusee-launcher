@@ -9,7 +9,7 @@ It contains *no payloads*. You must download and place the payloads in the "Payl
 	- Python 3
 	- libusb
 	- pyusb
-(All of these can be installed using ihaveamac's guide [here](https://gbatemp.net/threads/tutorial-for-osx-users.501950/page-2#post-7935127).
+(All of these can be installed using ihaveamac's guide [here](https://gbatemp.net/threads/tutorial-for-osx-users.501950/page-2#post-7935127).)
 
 # Usage
 
