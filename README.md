@@ -1,17 +1,17 @@
-#Fusée Gelée Launcher for MacOS
+# Fusée Gelée Launcher for MacOS
 
 This is a simple fork of the ReSwitched team's [fusee-launcher](https://github.com/reswitched/fusee-launcher).
 
 It contains *no payloads*. You must download and place the payloads in the "Payloads" directory.
 
-#Dependencies:
+# Dependencies:
 
 	- Python 3
 	- libusb
 	- pyusb
 (All of these can be installed using ihaveamac's guide [here](https://gbatemp.net/threads/tutorial-for-osx-users.501950/page-2#post-7935127).
 
-#Usage
+# Usage
 
 1. `cd` to the directory that you want to keep the launcher
 2. Copy the URL of the repository and run `git clone [url]`
