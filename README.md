@@ -10,12 +10,11 @@ It contains *no payloads*. You must download and place the payloads in the "Payl
 	- libusb
 	- pyusb
 	- tkinter
-	- PIL
 	
 	1. Install brew via https://brew.sh
 	2. Install Python 3 and libusb: brew install python libusb
 	3. Install pyusb: python3 -mpip install pyusb
-	4. Install tkinter: python3 -mpip install Pillow
+	4. Install tkinter: python3 -mpip install tkinter
 
 # Usage
 
