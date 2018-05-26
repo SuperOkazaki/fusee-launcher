@@ -1,6 +1,6 @@
 # Fusée Gelée Launcher for MacOS
 
-This is a fork of [OkazakiTheOtaku's](https://gbatemp.net/members/okazakitheotaku.396035/) fork of Fusée Gelée Launcher for MacOS, which  is a simple fork of the ReSwitched team's [fusee-launcher](https://github.com/reswitched/fusee-launcher).
+This is a simple fork of the ReSwitched team's [fusee-launcher](https://github.com/reswitched/fusee-launcher).
 
 It contains *no payloads*. You must download and place the payloads in the "Payloads" directory.
 
@@ -35,5 +35,5 @@ It contains *no payloads*. You must download and place the payloads in the "Payl
 - The entire ReSwitched team, of course
 - SciresM in particular, whom I really look up to as a programmer and as a person
 - [@gbazone](https://gbatemp.net/members/gbazone.350058/) on GBATemp and his OS X tutorial
-- [@OkazakiTheOtaku](https://gbatemp.net/members/okazakitheotaku.396035/) for making the Fusée Gelée Launcher for MacOS
+- @trainboy2019 on GitHub for making the tkinter GUI and submitting a pull request
 - If I forgot anyone else I'm sorry - I love you too, don't worry! Let me know and I'll credit you here.
