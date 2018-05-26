@@ -15,6 +15,7 @@ It contains *no payloads*. You must download and place the payloads in the "Payl
 	2. Install Python 3 and libusb: brew install python libusb
 	3. Install pyusb: python3 -mpip install pyusb
 	4. Install tkinter: python3 -mpip install tkinter
+	--note-- tkinter is installed on most Python3 installations by default
 
 # Usage
 
