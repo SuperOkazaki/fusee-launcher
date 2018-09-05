@@ -29,9 +29,16 @@ It contains *no payloads*. You must download and place the payloads in the "Payl
 5. In the folder that was extracted, place your Fusée payloads in the `payloads` folder.
 4. Enter RCM mode on the Switch (this will not be covered here)
 5. While in RCM mode, connect the Switch to a USB port on the computer (using a hub will likely *not* work!)
+<<<<<<< HEAD
 6. Doubleclick on `macOS launch.command`
 7. Use the arrow buttons in the window that opens to find your payloads.
 8. Press Run.
+=======
+6. Run one of the `.command` files by double-clicking on them.
+7. If using `macOS launch.command`, the script will list the available payloads (make sure they're in the `Payloads` folder).
+8. Use the arrow buttons in the window that opens to find your payloads.
+9. Press Run.
+>>>>>>> origin/master
 
 # Credit
 
