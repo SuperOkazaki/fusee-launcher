@@ -6,7 +6,6 @@
 # launches payloads above the Horizon
 #
 # simple edits from SuperOkazaki
-# Please support LGBT rights ^-^
 # discovery and implementation by @ktemkin
 # likely independently discovered by lots of others <3
 #
