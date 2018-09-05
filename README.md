@@ -1,6 +1,6 @@
 # Fusée Gelée Launcher for MacOS
 
-This is a simple fork of the ReSwitched team's [fusee-launcher](https://github.com/reswitched/fusee-launcher).
+This is a simple fork of the original [fusee-launcher](https://github.com/reswitched/fusee-launcher).
 
 It contains *no payloads*. You must download and place the payloads in the "Payloads" directory.
 
@@ -29,7 +29,6 @@ It contains *no payloads*. You must download and place the payloads in the "Payl
 5. In the folder that was extracted, place your Fusée payloads in the `payloads` folder.
 4. Enter RCM mode on the Switch (this will not be covered here)
 5. While in RCM mode, connect the Switch to a USB port on the computer (using a hub will likely *not* work!)
-<<<<<<< HEAD
 6. Doubleclick on `macOS launch.command`
 7. Use the arrow buttons in the window that opens to find your payloads.
 8. Press Run.
