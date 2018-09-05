@@ -38,7 +38,6 @@ It contains *no payloads*. You must download and place the payloads in the "Payl
 7. If using `macOS launch.command`, the script will list the available payloads (make sure they're in the `Payloads` folder).
 8. Use the arrow buttons in the window that opens to find your payloads.
 9. Press Run.
->>>>>>> origin/master
 
 # Credit
 
