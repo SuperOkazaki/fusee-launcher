@@ -14,7 +14,7 @@ It contains *no payloads*. You must download and place the payloads in the "Payl
 	- tkinter
 	
 	1. Install brew via https://brew.sh
-	2. Install Python 3 and libusb: brew install python
+	2. Install Python 3: brew install python
 	3. Install libusb: brew install libusb
 	3. Install pyusb: python3 -mpip install pyusb
 	4. Install tkinter: python3 -mpip install tkinter
