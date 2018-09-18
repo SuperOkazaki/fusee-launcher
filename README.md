@@ -39,6 +39,17 @@ It contains *no payloads*. You must download and place the payloads in the "Payl
 8. Use the arrow buttons in the window that opens to find your payloads.
 9. Press Run.
 
+# Troubleshooting
+Recieving this error? `usb.core.NoBackendError: No backend available`
+
+	Run: brew link --overwrite libusb
+
+If you are recieving issues and wish for help, please open a GitHub issue or let me know on the GBATemp thread.
+
+Include the following information:
+
+1. MacOS Version String (e.g., 10.14.x). Just giving me the name of the release ("High Sierra") does not help as much.
+2. Mac hardware. Include the model and year, so I know what ports and interfaces you are using.
 # Credit
 
 - ReSwitched
