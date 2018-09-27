@@ -52,7 +52,7 @@ def calculate_geometry(master: tk.Tk, window_height: int = 100, window_width: in
 if __name__ == '__main__':
     PAYLOADS: list = get_payloads_or_empty()
     if len(PAYLOADS) < 1:
-        tk.messagebox.showerror(
+        messagebox.showerror(
             "Error", "The payloads/ folder is either empty or non-existent! Please see the README.md for instructions.")
         os.sys.exit(1)
     CURRENT_PAYLOAD = PAYLOADS[0]
@@ -63,5 +63,4 @@ if __name__ == '__main__':
     top.configure(background="gray91")
     top.geometry(calculate_geometry(top))
     init_window(top)
-    top.attributes('-topmost', True)
     top.mainloop()
