@@ -1,56 +1,56 @@
-# Fusée Gelée Launcher for MacOS
+# Fusée Gelée Launcher for macOS
 
 This is a simple fork of the original [fusee-launcher](https://github.com/reswitched/fusee-launcher).
 
-It contains *no payloads*. You must download and place the payloads in the "Payloads" directory.
+It contains _no payloads_. You must download and place the payloads in the "payloads" directory.
 
 **Note:** Payload-specific launchers have been removed for now. If demand is there, I will bring them back. I just do not see a point to them with one unified GUI.
 
-# Dependencies:
+## Dependencies
 
-	- Python 3
-	- libusb
-	- pyusb
-	- tkinter
-	
-	1. Install brew via https://brew.sh
-	2. Install Python 3: brew install python
-	3. Install libusb: brew install libusb
-	3. Install pyusb: python3 -mpip install pyusb
-	4. Install tkinter: python3 -mpip install tkinter
-	--note-- tkinter is installed on most Python3 installations by default
+    - Python 3
+    - libusb
+    - pyusb
+    - tkinter
 
-# Usage
+## Installation
 
-0. Install everything in the above `Dependencies` area
-1. Look at the top of this repository page
-2. Click the green button that says "Clone or download"
-3. Download ZIP
-4. Find where the ZIP downloaded and extract it
-5. In the folder that was extracted, place your Fusée payloads in the `payloads` folder.
-4. Enter RCM mode on the Switch (this will not be covered here)
-5. While in RCM mode, connect the Switch to a USB port on the computer (using a hub will likely *not* work!)
-6. Doubleclick on `macOS launch.command`
-7. Use the arrow buttons in the window that opens to find your payloads.
-8. Press Run.
-=======
-6. Run one of the `.command` files by double-clicking on them.
-7. If using `macOS launch.command`, the script will list the available payloads (make sure they're in the `Payloads` folder).
-8. Use the arrow buttons in the window that opens to find your payloads.
-9. Press Run.
+1. Install [Homebrew](https://brew.sh)
+2. Install Python 3: `brew install python`
+3. Install libusb: `brew install libusb`
+4. Install pyusb: `python3 -mpip install pyusb`
+5. Install tkinter: `python3 -mpip install tkinter`
+   --note-- tkinter is installed on most Python3 installations by default
 
-# Troubleshooting
-Recieving this error? `usb.core.NoBackendError: No backend available`
+If you'd like, you can use a `virtualenv`, see a [guide](https://www.pythoncentral.io/how-to-install-virtualenv-python/) on how to set it up
 
-	Run: brew link --overwrite libusb
+## Usage
+
+1. Install everything in the above `Dependencies` area
+2. Look at the top of this repository page
+3. Click the green button that says "Clone or download"
+4. Download ZIP
+5. Find where the ZIP downloaded and extract it
+6. In the folder that was extracted, place your Fusée payloads in the `payloads` folder.
+7. Enter RCM mode on the Switch (this will not be covered here)
+8. While in RCM mode, connect the Switch to a USB port on the computer (using a hub will likely _not_ work!)
+9. Doubleclick on `macOS launch.command`
+10. Use the arrow buttons in the window that opens to find your payloads.
+11. Press Run.
+
+## Troubleshooting
+
+Receiving this error? `usb.core.NoBackendError: No backend available`
+
+    Run: brew link --overwrite libusb
 
 If you are recieving issues and wish for help, please open a GitHub issue or let me know on the GBATemp thread.
-
 Include the following information:
 
 1. MacOS Version String (e.g., 10.14.x). Just giving me the name of the release ("High Sierra") does not help as much.
 2. Mac hardware. Include the model and year, so I know what ports and interfaces you are using.
-# Credit
+
+## Credit
 
 - ReSwitched
 - Ktemkin
