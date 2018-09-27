@@ -1,59 +1,54 @@
-from tkinter import *
-
 import os
+import tkinter as tk
+from tkinter import ttk
 
-top = Tk()
-top.grid()
-top.geometry("300x300")
+PAYLOADS: list = []
+CURRENT_PAYLOAD: str = ""
 
-i=0
 
-payload=''
-payloads=os.listdir("payloads")
-try:
-   payloads.remove('.DS_Store')
-except:
-   pass
+def get_payloads()-> list:
+    payload_dir: str = "payloads"
+    if os.path.isdir(payload_dir):
+        return [pld for pld in os.listdir(payload_dir) if pld.endswith(".bin") and not pld.startswith(".")]
+    return []
 
-var = StringVar()
-label = Label( top, textvariable = var, relief = RAISED )
-var.set(str(payloads[i]))
-payload=str(payloads[i])
-label.pack()
 
-def runPayload():
-    global payload
-    os.system('python3 fusee-launcher.py payloads/'+payload)
+def set_payload(event: tk.Event) -> None:
+    CURRENT_PAYLOAD = PAYLOADS[event.widget.current()]
 
-def decrement():
-    global i
-    global label
-    global var
-    global payload
-    i-=1
-    if i<0:
-        i=len(payloads)-1
-    var.set(str(payloads[i]))
-    payload=str(payloads[i])
-    label.pack()
-    
-def increment():
-    global i
-    global label
-    global label2
-    global var
-    global payload
-    i+=1
-    if i>len(payloads)-1:
-        i=0
-    var.set(str(payloads[i]))
-    payload=str(payloads[i])
-    label.pack()
 
-A = Button(top, text = "<", command = decrement)
-A.place(relx=0.25, rely=0.5, anchor=W)
-B = Button(top, text = "Run", command = runPayload)
-B.place(relx=0.5, rely=0.5, anchor=CENTER)
-C = Button(top, text = ">", command = increment)
-C.place(relx=0.75, rely=0.5, anchor=E)
-top.mainloop()
+def run_payload(event: tk.Event) -> None:
+    if CURRENT_PAYLOAD:
+        print(f"yep, {CURRENT_PAYLOAD}")
+        os.system(f'python3 fusee-launcher.py payloads/{str(CURRENT_PAYLOAD)}')
+    else:
+        tk.messagebox.showerror("Error", "No payload selected!")
+
+
+def init_window(top: tk.Tk, payloads: list) -> None:
+    var = tk.StringVar(value="Payloads:")
+    label = tk.Label(top, textvariable=var)
+    label.pack(expand=True, anchor=tk.N)
+
+    payload_combo = ttk.Combobox(top, values=payloads, state='readonly')
+    payload_combo.current(0)
+    payload_combo.pack(expand=True, anchor=tk.CENTER)
+    payload_combo.bind("<<ComboboxSelected>>", set_payload)
+
+    run_button = tk.Button(top, text="Run", command=run_payload)
+    run_button.pack(anchor=tk.S)
+
+
+if __name__ == '__main__':
+    PAYLOADS: list = get_payloads()
+    if (len(PAYLOADS) < 1):
+        tk.messagebox.showerror(
+            "Error", "The payloads/ folder is either empty or inexistent! Please see the README.md.")
+        os.sys.exit(1)
+    CURRENT_PAYLOAD = PAYLOADS[0]
+
+    top: tk.Tk = tk.Tk()
+    top.grid()
+    top.geometry("300x200")
+    init_window(top, PAYLOADS)
+    top.mainloop()
