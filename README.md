@@ -54,5 +54,5 @@ Include the following information:
 - SciresM
 - @gbazone on GBATemp and his OS X tutorial
 - @trainboy2019 on GitHub for making the tkinter GUI and submitting a pull request
-- @Ickerday on GitHub for code cleanup and general improvements and submitting a pull request
+- @Ickerday on GitHub for code cleanup, general improvements, and submitting a pull request
 - If I forgot anyone else I'm sorry - I love you too, don't worry! Let me know and I'll credit you here.
