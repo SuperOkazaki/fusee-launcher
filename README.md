@@ -20,7 +20,6 @@ It contains _no payloads_. You must download and place the payloads in the "payl
 3. Install libusb: `brew install libusb`
 4. Install Python dependencies: `python3 -m pip install -r requirements.txt`
 
-If you'd like, you can use a `virtualenv`, see a [guide](https://www.pythoncentral.io/how-to-install-virtualenv-python/) on how to set it up
 
 ## Usage
 
@@ -53,6 +52,7 @@ Include the following information:
 - ReSwitched
 - Ktemkin
 - SciresM
-- [@gbazone](https://gbatemp.net/members/gbazone.350058/) on GBATemp and his OS X tutorial
+- @gbazone on GBATemp and his OS X tutorial
 - @trainboy2019 on GitHub for making the tkinter GUI and submitting a pull request
+- @Ickerday on GitHub for code cleanup and general improvements and submitting a pull request
 - If I forgot anyone else I'm sorry - I love you too, don't worry! Let me know and I'll credit you here.
