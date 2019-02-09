@@ -18,7 +18,7 @@ It contains _no payloads_. You must download and place the payloads in the "payl
 1. Install [Homebrew](https://brew.sh)
 2. Install Python 3: `brew install python`
 3. Install libusb: `brew install libusb`
-4. Install Python dependencies: `python3 -m pip install -r requirements.txt`
+4. Install Python dependencies: `python3 -m pip install pyusb`
 
 
 ## Usage
