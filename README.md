@@ -1,10 +1,12 @@
+:::Please Note:::
+This project still works, and will likely continue to work, but it has been deprecated in favor of [NXBoot](https://github.com/mologie/nxboot) for macOS users. My apologies.
+
 # Nintendo Switch RCM Payload Launcher for macOS
 
 This is a simple fork of the original [fusee-launcher](https://github.com/reswitched/fusee-launcher).
 
 It contains _no payloads_. You must download and place the payloads in the "payloads" directory.
 
-**Note:** Payload-specific launchers have been removed for now. If demand is there, I will bring them back. I just do not see a point to them with one unified GUI.
 
 ## Dependencies
 
